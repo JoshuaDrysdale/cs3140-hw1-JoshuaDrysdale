@@ -39,3 +39,37 @@ console.log("the sum of an array [1,2,3] = "+sum([1,2,3]));
 console.log("the average of an array [1,2,3] = "+average([1,2,3]));
 console.log("the min of an array [3,1,2] = "+min([3,1,2]));
 console.log("the max of an array [3,1,2] = "+max([3,1,2]));
+
+//part 2
+
+function capitalize(str){
+   let cap = str.at(0).toUpperCase();
+   let arr = str.split("");
+   arr[0] = cap;
+   str = arr.join("");
+   return str;
+}
+
+console.log(capitalize("hello"));
+
+function reverse(str){
+    let arr = str.split("");
+    arr.reverse();
+    str = arr.join("");
+    return str;
+}
+
+
+function countVowels(str){
+    const vowels = "aeiou";
+    let count = 0;
+
+    for (const char of str.toLowerCase()) {
+        if (vowels.includes(char)) count++;
+    }
+    return count;
+}
+
+console.log(reverse("hello"));
+console.log(countVowels("hello"));
+
