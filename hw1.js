@@ -50,7 +50,7 @@ function capitalize(str){
    return str;
 }
 
-console.log(capitalize("hello"));
+
 
 function reverse(str){
     let arr = str.split("");
@@ -70,6 +70,7 @@ function countVowels(str){
     return count;
 }
 
+console.log(capitalize("hello"));
 console.log(reverse("hello"));
 console.log(countVowels("hello"));
 
