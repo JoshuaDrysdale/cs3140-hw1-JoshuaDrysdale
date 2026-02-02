@@ -50,11 +50,6 @@ function capitalize(str){
    return str;
 }
 
-<<<<<<< HEAD
-
-=======
-console.log(capitalize("hello"));
->>>>>>> 0aa7870e1b6f3ba323671e9222c0fbfc04b3fe96
 
 function reverse(str){
     let arr = str.split("");
@@ -74,10 +69,37 @@ function countVowels(str){
     return count;
 }
 
-<<<<<<< HEAD
-console.log(capitalize("hello"));
-=======
->>>>>>> 0aa7870e1b6f3ba323671e9222c0fbfc04b3fe96
+
 console.log(reverse("hello"));
 console.log(countVowels("hello"));
+console.log(capitalize("hello"));
+
+
+// part 3
+
+const student = {
+
+name: "Joshua Drysdale",
+
+age: 20,
+
+grades: [85, 90, 78],
+
+getAverage: function() {
+    let num = 0
+    for (let i=0; i<this.grades.length; i++){
+        num +=this.grades[i];
+    }
+    return (num/this.grades.length);
+
+},
+
+isHonorRoll: function() {
+    return this.getAverage() > 85;
+}
+
+}
+
+console.log(student.getAverage());
+console.log(student.isHonorRoll());
 
